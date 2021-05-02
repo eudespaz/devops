@@ -262,7 +262,7 @@ spec:
       containers:
       - env:
         - name: GRAYLOG_WEB_ENDPOINT_URI
-          value: http://graylog.rancher.<dominio>/api
+          value: http://graylog.rancher.docker.k8s.br/api
         - name: GRAYLOG_ELASTICSEARCH_HOSTS
           value: "http://elasticsearch.graylog.svc.cluster.local:9200"
         - name: ELASTICSEARCH_DISCOVERY_ZEN_PING_MULTICAST_ENABLED
@@ -338,7 +338,7 @@ metadata:
     allow.http: "false"
 spec:
   rules:
-  - host: graylog.rancher.dev-ops-ninja.com
+  - host: graylog.rancher.docker.k8s.br
     http:
       paths:
         - path: /
