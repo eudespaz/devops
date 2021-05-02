@@ -1,0 +1,6 @@
+#comando para configurar o git
+
+git config --global user.email "seu email"
+
+git config --global user.name "seu usuário"
+
